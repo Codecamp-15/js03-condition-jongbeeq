@@ -1,18 +1,21 @@
-// let a = prompt();
+let a = prompt();
 
-// if (a != null && a.trim() != '' && !isNaN(a)) {
-//     let b = prompt();
-//     if (b != null && b.trim() != '' && !isNaN(b)) {
-//         let c = prompt();
-//         if (c != null && c.trim() != '' && !isNaN(c)) {
-//         //##############วิ่่งได้#########
-//             // let array = [a , b , c]
-//             // function compareNumbers(b, a) {
-//             //         return a - b;
-//             // }
-//             // let e = String(array.sort(compareNumbers))
+if (a != null && a.trim() != '' && !isNaN(a)) {
+    let b = prompt();
+    if (b != null && b.trim() != '' && !isNaN(b)) {
+        let c = prompt();
+        if (c != null && c.trim() != '' && !isNaN(c)) {
+        //##############วิ่่งได้#########
+            let array = [a , b , c]
+            function compareNumbers(b, a) {
+                    return a - b;
+            }
+            let e = String(array.sort(compareNumbers))
 
-//             // console.log(e)
+            console.log(e)
+        }
+    }
+}
 //         //##################################
 //         //##############ติด bug################
 //             // if (a >= b && b >= c) {
@@ -34,18 +37,18 @@
 // }
 
 
-//############เฉลย###########################
+//เฉลย
 // V.0 แสดงเฉพาะตัวที่มากที่สุด
 // V.1 Handleㆍ เลขที่ไม่เหมือนกัน
 // V.2 Handle เลขที่เหมือนกันได้
 
-let x = Number(prompt('Enter number 1'));
-let y = +prompt('Enter number 2');
-let z = prompt('Enter number 3') * 1;
+// let x = Number(prompt('Enter number 1'));
+// let y = +prompt('Enter number 2');
+// let z = prompt('Enter number 3') * 1;
 
-let max
-let mid
-let min
+// let max
+// let mid
+// let min
 
 // CASE1 : X มากสุด
 // CASE2 : Y มากสุด
@@ -100,33 +103,32 @@ let min
 // console.log(`Max = ${max} Mid = ${mid} Min = ${min}`);
 
 // V.1 Handle เลขที่ไม่เหมือนกัน : วิธี2
-if (x >= y && x >= z && y >= z) {
-    // x,y,z
-    max = x;
-    mid = y;
-    min = z;
-} else if (x >= y && x >= z && y < z) {
-    max = x;
-    mid = z;
-    min = y;
-} else if (y >= x && y >= z && x >= z) {
-    max = y;
-    mid = x;
-    min = z;
-} else if (y >= x && y >= z && x < z) {
-    max = y;
-    mid = z;
-    min = x;
-} else if (z >= x && z >= y && x >= y) {
-    max = z;
-    mid = x;
-    min = y;
-} else if (z >= x && z >= y && x < y) {
-    max = z;
-    mid = y;
-    min = x;
-}
+// if (x >= y && x >= z && y >= z) {
+//     // x,y,z
+//     max = x;
+//     mid = y;
+//     min = z;
+// } else if (x >= y && x >= z && y < z) {
+//     max = x;
+//     mid = z;
+//     min = y;
+// } else if (y >= x && y >= z && x >= z) {
+//     max = y;
+//     mid = x;
+//     min = z;
+// } else if (y >= x && y >= z && x < z) {
+//     max = y;
+//     mid = z;
+//     min = x;
+// } else if (z >= x && z >= y && x >= y) {
+//     max = z;
+//     mid = x;
+//     min = y;
+// } else if (z >= x && z >= y && x < y) {
+//     max = z;
+//     mid = y;
+//     min = x;
+// }
 
-console.log(`Max = ${max} Mid = ${mid} Min = ${min}`);
+// onsole.log(`Max = ${max} Mid = ${mid} Min = ${min}`);
 
-//############################################
